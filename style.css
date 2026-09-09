@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, Courier, monospace;
+    /* The assignment says not to worry about mobile, so this full-screen layout is perfect */
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* LEFT SIDE */
+.logo-container { 
+    background-image: url(images/photo-1585202900225-6d3ac20a6962.png);
+    background-size: cover; /* Ensures the image covers the whole left side */
+    background-position: center;
+    width: 40%; 
+    position: relative;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    position: absolute;
+    font-family: norse;
+    top: 22%;   
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* The semi-transparent black background */
+    height: 120px;
+    color: white;
+    font-size: 2.5rem;
+    gap: 15px; 
+}
+.logo-name p {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.logo {
+    /* Odin Logo */
+    width: 60px;
+    height: 80px;
+    background: url(images/odin-lined.png) center/contain no-repeat;
+}
+
+/* RIGHT SIDE */
+.form-container {
+    display: flex;
+    flex-direction: column; 
+    width: 60%;
+}
+
+.text-header {
+    background-color: #f9fafb; 
+    padding: 40px 50px;
+}
+
+.text-header h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sub-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.form-card {
+    background-color: white;
+    padding: 30px 50px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
+}
+
+.form-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Form Layout */
+.row {
+    display: flex;
+    gap: 40px; 
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+label {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* DEFAULT INPUT STATE: Light border as per assignment */
+input {
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* FOCUS STATE: Blue border and subtle box-shadow */
+input:focus {
+    border: 1px solid #4c6bd1; /* Blue border */
+    box-shadow: 0 0 5px rgba(76, 107, 209, 0.3); /* Subtle box-shadow */
+}
+
+/* INVALID STATE: Red border (using :user-invalid) */
+/* Only shows red after the user interacts with the field */
+input:user-invalid {
+    border: 1px solid red;
+}
+
+/* Button */
+button {
+    background-color: #596D48; /* Exact green from the assignment */
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-text {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.login-text a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}

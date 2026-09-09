@@ -8,16 +8,68 @@
 </head>
 <body>
     <div class="container">
+        
+        <!-- LEFT SIDE -->
         <div class="logo-container">
-            <div class="logo-name"><div class="logo"></div></div>
+            <div class="logo-name">
+                <div class="logo"></div>
+                <p>ODIN</p>
+            </div>
         </div>
-        <div>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis natus quam earum pariatur error dolor, id officiis fugit ab exercitationem alias unde necessitatibus rerum asperiores iste et ipsum numquam suscipit.</h2>
-        <form id="signup-form">
-        </form>
+
+        <!-- RIGHT SIDE -->
+        <div class="form-container">
+            
+            <!-- Top Text Section (Grey background) -->
+            <div class="text-header">
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</h2>
+                <p class="sub-text">You know you want to.</p>
+            </div>
+
+            <!-- Form Section (White background with shadow) -->
+            <div class="form-card">
+                <h3>Let's do this!</h3>
+                
+                <form id="signup-form">
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" placeholder="Thor">
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" placeholder="Odinson">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <label for="password">PASSWORD</label>
+                            <!-- Added class 'error' to match the red box in your image -->
+                            <input type="password" id="password" class="error">
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" class="error">
+                        </div>
+                    </div>
+
+                    <button type="submit">Create Account</button>
+                    <p class="login-text">Already have an account? <a href="login.html">Log in</a></p>
+                </form>
+            </div>
         </div>
-        <button type="submit" form="signup-form">Create Account</button>
-        <p>Already have an account? <a href="login.html">Log in</a></p>
     </div>
 </body>
 <script src="main.js"></script>
