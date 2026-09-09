@@ -6,7 +6,6 @@
 
 body {
     font-family: sans-serif, Courier, monospace;
-    /* The assignment says not to worry about mobile, so this full-screen layout is perfect */
 }
 
 .container {
@@ -18,7 +17,7 @@ body {
 /* LEFT SIDE */
 .logo-container { 
     background-image: url(images/photo-1585202900225-6d3ac20a6962.png);
-    background-size: cover; /* Ensures the image covers the whole left side */
+    background-size: cover; 
     background-position: center;
     width: 40%; 
     position: relative;
@@ -32,8 +31,8 @@ body {
     font-family: norse;
     top: 22%;   
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* The semi-transparent black background */
-    height: 120px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 140px;
     color: white;
     font-size: 2.5rem;
     gap: 15px; 
@@ -43,9 +42,8 @@ body {
     font-weight: bold;
 }
 .logo {
-    /* Odin Logo */
-    width: 60px;
-    height: 80px;
+    width: 90px;
+    height: 100px;
     background: url(images/odin-lined.png) center/contain no-repeat;
 }
 
@@ -104,7 +102,6 @@ label {
     margin-bottom: 5px;
 }
 
-/* DEFAULT INPUT STATE: Light border as per assignment */
 input {
     padding: 10px;
     border: 1px solid #E5E7EB;
@@ -113,21 +110,17 @@ input {
     outline: none;
 }
 
-/* FOCUS STATE: Blue border and subtle box-shadow */
 input:focus {
-    border: 1px solid #4c6bd1; /* Blue border */
-    box-shadow: 0 0 5px rgba(76, 107, 209, 0.3); /* Subtle box-shadow */
+    border: 1px solid #4c6bd1; 
+    box-shadow: 0 0 5px rgba(76, 107, 209, 0.3); 
 }
 
-/* INVALID STATE: Red border (using :user-invalid) */
-/* Only shows red after the user interacts with the field */
 input:user-invalid {
     border: 1px solid red;
 }
 
-/* Button */
 button {
-    background-color: #596D48; /* Exact green from the assignment */
+    background-color: #596D48;
     color: white;
     padding: 12px 40px;
     border: none;
