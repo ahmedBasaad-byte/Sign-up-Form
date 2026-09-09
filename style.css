@@ -13,7 +13,6 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
 /* LEFT SIDE */
 .logo-container { 
     background-image: url(images/photo-1585202900225-6d3ac20a6962.png);
@@ -39,7 +38,7 @@ body {
 }
 .logo-name p {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight:bolder;
 }
 .logo {
     width: 90px;
@@ -73,7 +72,7 @@ body {
 
 .form-card {
     background-color: white;
-    padding: 30px 50px;
+    padding: 0px 50px;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); 
 }
 
